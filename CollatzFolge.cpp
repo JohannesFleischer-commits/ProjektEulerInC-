@@ -20,4 +20,35 @@ Startet man mit der Zahl n = 13, ergibt sich folgende Sequenz:
 Diese Folge enthält insgesamt 10 Zahlen 
 (inklusive Start- und Endwert)
 
+Aufgabe: 
+
+Welche Startzahl kleiner als eine Million erzeugt 
+die längste Collatz-Folge?
+
 */
+
+#include <cmath>
+#include <iostream>
+
+
+int main (){
+
+
+	for(int i=1; i<100000; i ++){
+
+		long long zahl =i; 
+		int zaehler=1; 
+
+		while(zahl!=1){
+
+			if(zahl%2==0){
+				zahl=zahl/2;
+
+			}else{
+				zahl=3+zahl+1;
+
+			}
+		}
+		zaehler++;
+	}
+}
