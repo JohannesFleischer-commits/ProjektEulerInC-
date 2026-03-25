@@ -19,7 +19,15 @@ Wie viele Sonntage fallen im 20. Jahrhundert
 (vom 1. Januar 1901 bis zum 31. Dezember 2000) 
 auf den ersten Tag eines Monats?
 
-
-
-
 */
+
+#include <iostream>
+#include <cmath>
+
+
+int main (){
+
+    
+
+
+}
