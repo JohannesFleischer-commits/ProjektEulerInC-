@@ -40,28 +40,33 @@ int main (){
                 sonntag++;
             }
 
-            // Schaltjahre berechnen:
-
             if (monat==4 || monat==6 || monat==9 || monat ==11){
                 tage_in_monate =30;
             }
-            
 
-                  
+            if (monat==2){
 
+                //Schaltjahr prüfen
 
-            } 
+                if((jahr%4== 0 && jahr%100 != 0 ) || (jahr %400 ==0)){    
+                    tage_in_monate=29;
+                }else{
+                    tage_in_monate=28;
+                }
+            }    
 
+            // Wochentage weiterrechnen 
 
+            startwert = startwert +tage_in_monate;
 
-        }
-
-
+            while(startwert > 7){
+                startwert=startwert-7;
+            }
+        } 
     }
 
+    std::cout<<" Anzahl der Sonntag ist:"<< sonntag<< std::endl;
 
-
-    
-
+    return 0;
 
 }
