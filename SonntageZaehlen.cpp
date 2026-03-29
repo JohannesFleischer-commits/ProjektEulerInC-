@@ -30,17 +30,27 @@ int main (){
     int sonntag = 0;
     int startwert = 1;
 
-    for( int i=1900; i<=2000; i++){ // Jahre durchlaufen 
+    for(int jahr=1900; jahr<=2000; jahr++){ // Jahre durchlaufen 
 
-        for( int i=1; i<=12; i++){ // Monate durchlaufen
+        for(int monat=1; monat<=12; monat++){ // Monate durchlaufen
 
-            if( startwert==7){
-                sonntag++;
+            if(startwert ==7){
+                sonntag ++;
             }
 
             // Schaltjahre berechnen:
 
-            
+            if(jahr%4==0 && jahr%100!=0 || jahr%400==0){
+
+                if(monat==2){
+                    startwert= ( startwert +29)%7;
+                }
+                  
+
+
+            } 
+
+
 
         }
 
