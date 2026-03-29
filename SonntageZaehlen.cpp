@@ -29,13 +29,13 @@ int main (){
 
     int sonntag = 0;
     int startwert = 1;
-    int tage_in_monate=0;
+    int tage_in_monate = 31;
 
     for(int jahr=1900; jahr<=2000; jahr++){ // Jahre durchlaufen 
 
         for(int monat=1; monat<=12; monat++){ // Monate durchlaufen
-
-            
+            tage_in_monate= 31; 
+                       
             if(jahr>=1901 && startwert==7){ // Ab 1901 prüfen
                 sonntag++;
             }
