@@ -27,6 +27,28 @@ auf den ersten Tag eines Monats?
 
 int main (){
 
+    int sonntag = 0;
+    int startwert = 1;
+
+    for( int i=1900; i<=2000; i++){ // Jahre durchlaufen 
+
+        for( int i=1; i<=12; i++){ // Monate durchlaufen
+
+            if( startwert==7){
+                sonntag++;
+            }
+
+            // Schaltjahre berechnen:
+
+            
+
+        }
+
+
+    }
+
+
+
     
 
 
