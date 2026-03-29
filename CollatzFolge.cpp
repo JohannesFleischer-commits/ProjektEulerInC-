@@ -35,7 +35,6 @@ int main (){
 	int maxLaenge=0;
 	int besteZahl=0;
 
-
 	for(int i=1; i<1000000; i ++){
 
 		long long zahl =i; 
