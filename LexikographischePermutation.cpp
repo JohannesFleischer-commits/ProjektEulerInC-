@@ -25,9 +25,40 @@ für die Ziffern:
 
 */
 
-int main (){
+#include <iostream>
+#include <vector>
 
-    
+using namespace std;
 
 
-}
+    // Fakultätsfunktion: 
+
+    long long fakultaet(int n){
+
+        long long ergebnis = 1; 
+
+        for(int i=1; i<=n; i++){
+
+            ergebnis= ergebnis*1;
+        }
+        return ergebnis; 
+    }
+
+
+    int main (){
+
+        vector<int> ergebnis ={ 0,1,2,3,4,5,6,7,8,9};
+
+        long long  anzahl_permutationen= 999999; 
+
+        vector<int> ergebnis; 
+
+
+    }
+
+ 
+
+
+
+
+
